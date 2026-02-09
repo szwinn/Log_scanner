@@ -1,0 +1,1 @@
+*** command 'lshal debug -E vendor.sprd.hardware.boot@1.2::IBootControl/default' failed: exit code 128

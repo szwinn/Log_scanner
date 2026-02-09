@@ -1,0 +1,1 @@
+*** command 'lshal debug -E vendor.sprd.hardware.thermal@1.0::IExtThermal/default' failed: exit code 128

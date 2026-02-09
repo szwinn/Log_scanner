@@ -1,0 +1,35 @@
+[0122/044035.786120] [INFO:main.cc(55)] Using temp dir /data/misc/update_engine/tmp
+[0122/044035.798310] [INFO:main.cc(64)] A/B Update Engine starting
+[0122/044035.827446] [INFO:BootControlClient.cpp(341)] AIDL IBootControl not available, falling back to HIDL.
+[0122/044035.849928] [INFO:BootControlClient.cpp(354)] Using HIDL version 1.2 of IBootControl
+[0122/044035.856722] [INFO:boot_control_android.cc(64)] Loaded boot control hal.
+[0122/044035.900034] [INFO:vendor_update_engine_utils.cpp(307)] createUpdateEngineFactory!
+[0122/044035.908650] [INFO:BootControlClient.cpp(341)] AIDL IBootControl not available, falling back to HIDL.
+[0122/044035.917904] [INFO:BootControlClient.cpp(354)] Using HIDL version 1.2 of IBootControl
+[0122/044035.926003] Failed to get isDeclared for vendor.sprd.hardware.boot.IUniBootControl/default: Status(-1, EX_SECURITY): 'SELinux denied.'
+[0122/044035.934180] [WARN:UniBootControlClient.cpp(56)] AIDL IUniBootControl not available!
+[0122/044035.938573] [WARNING:vendor_update_engine_utils.cpp(45)] IUniBootControl aidl is not supported
+[0122/044035.943489] [INFO:vendor_update_engine_utils.cpp(24)] AIDL IUniBootControl not available, falling back to HIDL.
+[0122/044035.960335] [ERROR:update_attempter_android.cc(1056)] prefs_->GetInt64(kPrefsPreviousSlot, &previous_slot) failed.
+[0122/044035.966544] [INFO:update_attempter_android.cc(226)] OTAResult::NOT_ATTEMPTED
+[0122/044035.980651] [INFO:update_attempter_android.cc(949)] Clearing update complete marker.
+[0122/044035.990159] [INFO:update_attempter_android.cc(1437)] Scheduling CleanupPreviousUpdateAction.
+[0122/044035.994470] [INFO:action_processor.cc(51)] ActionProcessor: starting CleanupPreviousUpdateAction
+[0122/044036.001922] [INFO:cleanup_previous_update_action.cc(156)] Starting/resuming CleanupPreviousUpdateAction
+[0122/044102.036522] [INFO:cleanup_previous_update_action.cc(197)] Boot completed, waiting on markBootSuccessful()
+[0122/044102.057020] [INFO:snapshot.cpp(3936)] EnsureMetadataMounted does nothing in Android mode.
+[0122/044102.064600] [INFO:snapshot_stats.cpp(37)] Read merge statistics file failed: No such file or directory
+[0122/044102.091351] [INFO:cleanup_previous_update_action.cc(296)] Waiting for any previous merge request to complete. This can take up to several minutes.
+[0122/044102.120484] [INFO:snapshot.cpp(1140)] CheckMergeState for snapshots returned: None
+[0122/044102.139234] [INFO:snapshot.cpp(1112)] ProcessUpdateState handling state: None
+[0122/044102.159301] [INFO:cleanup_previous_update_action.cc(333)] Can't find any snapshot to merge.
+[0122/044102.178583] [INFO:boot_config.cpp(46)] [libfstab] Using Android DT directory /proc/device-tree/firmware/android/
+[0122/044102.194726] [INFO:vendor_update_engine_utils.cpp(301)] Has sent request to ufw service ,value is 0
+[0122/044102.203083] [INFO:cleanup_previous_update_action.cc(138)] Stopping/suspending/completing CleanupPreviousUpdateAction
+[0122/044102.221658] [INFO:cleanup_previous_update_action.cc(531)] Not reporting merge stats because state is None
+[0122/044102.244652] [INFO:cleanup_previous_update_action.cc(138)] Stopping/suspending/completing CleanupPreviousUpdateAction
+[0122/044102.276433] [INFO:action_processor.cc(116)] ActionProcessor: finished last action CleanupPreviousUpdateAction with code ErrorCode::kSuccess
+[0122/044102.290933] [INFO:update_attempter_android.cc(696)] Processing Done.
+[0122/044102.389504] [INFO:update_attempter_android.cc(949)] Clearing update complete marker.
+[0122/044102.421216] [INFO:update_attempter_android.cc(844)] Terminating cleanup previous update.
+[0122/195656.000552] [INFO:main.cc(81)] A/B Update Engine terminating with exit code 0

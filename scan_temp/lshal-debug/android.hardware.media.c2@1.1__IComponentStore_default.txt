@@ -1,0 +1,123 @@
+Beginning of dump -- C2ComponentStore: android.componentStore.unisoc
+
+  Supported components:
+
+    name: c2.unisoc.av1.decoder
+    domain: 1
+    kind: 1
+    rank: 128
+    mediaType: video/av01
+    aliases:
+
+    name: c2.unisoc.avc.decoder
+    domain: 1
+    kind: 1
+    rank: 128
+    mediaType: video/avc
+    aliases:
+
+    name: c2.unisoc.avc.encoder
+    domain: 1
+    kind: 2
+    rank: 128
+    mediaType: video/avc
+    aliases:
+
+    name: c2.unisoc.h263.decoder
+    domain: 1
+    kind: 1
+    rank: 128
+    mediaType: video/3gpp
+    aliases:
+
+    name: c2.unisoc.hevc.decoder
+    domain: 1
+    kind: 1
+    rank: 128
+    mediaType: video/hevc
+    aliases:
+
+    name: c2.unisoc.hevc.encoder
+    domain: 1
+    kind: 2
+    rank: 128
+    mediaType: video/hevc
+    aliases:
+
+    name: c2.unisoc.imaadpcm.decoder
+    domain: 2
+    kind: 1
+    rank: 7
+    mediaType: audio/ima-adpcm
+    aliases:
+
+    name: c2.unisoc.jpeg.decoder
+    domain: 1
+    kind: 1
+    rank: 128
+    mediaType: video/x-motion-jpeg
+    aliases:
+
+    name: c2.unisoc.jpeg.encoder
+    domain: 1
+    kind: 2
+    rank: 128
+    mediaType: video/x-motion-jpeg
+    aliases:
+
+    name: c2.unisoc.mp3.decoder
+    domain: 2
+    kind: 1
+    rank: 7
+    mediaType: audio/mpeg
+    aliases:
+
+    name: c2.unisoc.mpl1.decoder
+    domain: 2
+    kind: 1
+    rank: 7
+    mediaType: audio/mpeg
+    aliases:
+
+    name: c2.unisoc.mpl2.decoder
+    domain: 2
+    kind: 1
+    rank: 7
+    mediaType: audio/mpeg
+    aliases:
+
+    name: c2.unisoc.mp3.encoder
+    domain: 2
+    kind: 2
+    rank: 7
+    mediaType: audio/mpeg
+    aliases:
+
+    name: c2.unisoc.mpeg4.decoder
+    domain: 1
+    kind: 1
+    rank: 128
+    mediaType: video/mp4v-es
+    aliases:
+
+    name: c2.unisoc.vp8.decoder
+    domain: 1
+    kind: 1
+    rank: 128
+    mediaType: video/x-vnd.on2.vp8
+    aliases:
+
+    name: c2.unisoc.vp9.decoder
+    domain: 1
+    kind: 1
+    rank: 128
+    mediaType: video/x-vnd.on2.vp9
+    aliases:
+
+  Active components:
+
+    Creation time: 2026-02-08 16:19:09.069
+    Name: c2.unisoc.avc.decoder
+    Id: 0
+
+End of dump -- C2ComponentStore: android.componentStore.unisoc

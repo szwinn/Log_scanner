@@ -1,0 +1,823 @@
+[    0.000788] recovery filesystem table
+[    0.000856] =========================
+[    0.000862]   0 /spl  emmc /dev/block/mmcblk0boot0_b 0
+[    0.000866]
+[    0.000870]   1 /spl_bk  emmc /dev/block/mmcblk0boot1 0
+[    0.000874]
+[    0.000877]   2 /uboot  emmc /dev/block/by-name/uboot_b 0
+[    0.000880]
+[    0.000884]   3 /sml  emmc /dev/block/by-name/sml_b 0
+[    0.000887]
+[    0.000891]   4 /tos  emmc /dev/block/by-name/trustos_b 0
+[    0.000894]
+[    0.000897]   5 /teecfg  emmc /dev/block/by-name/teecfg_b 0
+[    0.000901]
+[    0.000904]   6 /vbmeta  emmc /dev/block/by-name/vbmeta_b 0
+[    0.000907]
+[    0.000910]   7 /vbmeta_system  emmc /dev/block/by-name/vbmeta_system_b 0
+[    0.000914]
+[    0.000917]   8 /vbmeta_vendor  emmc /dev/block/by-name/vbmeta_vendor_b 0
+[    0.000920]
+[    0.000924]   9 /dtbo  emmc /dev/block/by-name/dtbo_b 0
+[    0.000927]
+[    0.000930]   10 /ltedsp  emmc /dev/block/by-name/l_ldsp_b 0
+[    0.000933]
+[    0.000937]   11 /ltegdsp  emmc /dev/block/by-name/l_gdsp_b 0
+[    0.000940]
+[    0.000943]   12 /lteagdsp  emmc /dev/block/by-name/l_agdsp_b 0
+[    0.000946]
+[    0.000955]   13 /ltecdsp  emmc /dev/block/by-name/l_cdsp_b 0
+[    0.000959]
+[    0.000962]   14 /ltemodem  emmc /dev/block/by-name/l_modem_b 0
+[    0.000965]
+[    0.000968]   15 /ltefixnv1  emmc /dev/block/by-name/l_fixnv1 0
+[    0.000972]
+[    0.000975]   16 /ltefixnv2  emmc /dev/block/by-name/l_fixnv2 0
+[    0.000978]
+[    0.000981]   17 /ltedeltanv  emmc /dev/block/by-name/l_deltanv_b 0
+[    0.000985]
+[    0.000988]   18 /lteruntimenv1  emmc /dev/block/by-name/l_runtimenv1 0
+[    0.000991]
+[    0.000994]   19 /lteruntimenv2  emmc /dev/block/by-name/l_runtimenv2 0
+[    0.000998]
+[    0.001001]   20 /wcnmodem  emmc /dev/block/by-name/wcnmodem_b 0
+[    0.001005]
+[    0.001008]   21 /gnssmodem  emmc /dev/block/by-name/gnssmodem_b 0
+[    0.001011]
+[    0.001019]   22 /pmsys  emmc /dev/block/by-name/pm_sys_b 0
+[    0.001023]
+[    0.001026]   23 /misc  emmc /dev/block/by-name/misc 0
+[    0.001029]
+[    0.001032]   24 /boot  emmc /dev/block/by-name/boot_b 0
+[    0.001036]
+[    0.001039]   25 /persist  emmc /dev/block/by-name/persist 0
+[    0.001042]
+[    0.001045]   26 /logo  emmc /dev/block/by-name/logo 0
+[    0.001049]
+[    0.001052]   27 /fbootlogo  emmc /dev/block/by-name/fbootlogo 0
+[    0.001055]
+[    0.001058]   28 /system  erofs system_b 0
+[    0.001062]
+[    0.001065]   29 /system  ext4 system_b 0
+[    0.001068]
+[    0.001071]   30 /system_ext  erofs system_ext_b 0
+[    0.001075]
+[    0.001078]   31 /vendor  erofs vendor_b 0
+[    0.001081]
+[    0.001084]   32 /odm  erofs odm_b 0
+[    0.001088]
+[    0.001091]   33 /product  erofs product_b 0
+[    0.001094]
+[    0.001097]   34 /vendor_dlkm  erofs vendor_dlkm_b 0
+[    0.001100]
+[    0.001104]   35 /metadata  f2fs /dev/block/by-name/metadata 0
+[    0.001107]
+[    0.001110]   36 /metadata  ext4 /dev/block/by-name/metadata 0
+[    0.001114]
+[    0.001117]   37 /data  f2fs /dev/block/by-name/userdata 0
+[    0.001120]
+[    0.001123]   38 /cache  f2fs /dev/block/by-name/cache 0
+[    0.001127]
+[    0.001130]   39 /cache  ext4 /dev/block/by-name/cache 0
+[    0.001133]
+[    0.001136]   40 /mnt/vendor  ext4 /dev/block/by-name/prodnv 0
+[    0.001140]
+[    0.001143]   41 /storage/sdcard0  vfat /dev/block/mmcblk1p1 0
+[    0.001146]
+[    0.001149]   42 /tmp  ramdisk ramdisk 0
+[    0.001153]
+[    0.003213] I:Boot command: boot-recovery
+[    0.003242] I:Got 4 arguments from boot message
+[    0.005860] Loading make_device from librecovery_ui_ext.so
+[    0.103244] W:Failed to read max brightness: No such file or directory
+[    0.103274] I:Screensaver disabled
+[    0.104477] Display Mode 0 resolution: 720 x 1600 @ 60 FPS
+[    0.104512] Choosing display mode #0
+[    0.106032] Allocating buffer with resolution 720 x 1600 pitch: 2880 bpp: 32, size: 4608000
+[    0.106062] Framebuffer of size 4608000 allocated @ 0x72e9ec4000
+[    0.107134] Allocating buffer with resolution 720 x 1600 pitch: 2880 bpp: 32, size: 4608000
+[    0.107166] Framebuffer of size 4608000 allocated @ 0x72e9a5f000
+[    0.140376]           erasing_text: pt (489 x 48 @ 2887)
+[    0.148122]        no_command_text: pt (560 x 48 @ 2838)
+[    0.154567]             error_text: pt (472 x 48 @ 2838)
+[    0.162549]   cancel_wipe_data_text: pt (315 x 48 @ 2789)
+[    0.173726]   factory_data_reset_text: pt (813 x 48 @ 2936)
+[    0.180241]         try_again_text: pt (457 x 48 @ 2789)
+[    0.208138]   wipe_data_confirmation_text: pt (1052 x 96 @ 5870)
+[    0.269790]   wipe_data_menu_header_text: pt (1070 x 240 @ 12788)
+[    0.569048] no forbidden prop found in reserve!
+[    0.578861] I:Starting recovery (pid 330) on Mon Aug 25 21:38:06 2025
+[    0.578890]
+[    0.578895] I:locale is [pt-BR]
+[    0.580856] SELinux: Loaded file_contexts
+[    0.580886] stage is []
+[    0.580891] reason is [MainClearConfirm,2025-08-25T18:37:44Z]
+[    0.595206]        installing_text: pt (1054 x 48 @ 2887)
+[    0.611957] Command: "/system/bin/recovery" "--wipe_data" "--reason=MainClearConfirm,2025-08-25T18:37:44Z" "--locale=pt-BR"
+[    0.611984]
+[    0.612396] bluetooth.profile.hfp.ag.enabled=true
+[    0.612414] bluetooth.profile.hid.host.enabled=true
+[    0.612419] bluetooth.profile.hid.device.enabled=true
+[    0.612422] bluetooth.profile.map.server.enabled=true
+[    0.612426] bluetooth.profile.opp.enabled=true
+[    0.612430] bluetooth.profile.pan.nap.enabled=true
+[    0.612433] bluetooth.profile.pan.panu.enabled=true
+[    0.612437] bluetooth.profile.a2dp.source.enabled=true
+[    0.612441] bluetooth.profile.asha.central.enabled=true
+[    0.612444] bluetooth.profile.gatt.enabled=true
+[    0.612447] bluetooth.profile.pbap.server.enabled=true
+[    0.612451] bluetooth.profile.avrcp.target.enabled=true
+[    0.612454] ro.boot.mkn=other
+[    0.612457] ro.boot.auto.efuse=T612
+[    0.612461] ro.boot.auto.chipid=UMS9230-AC
+[    0.612464] ro.boot.lwfq.type=-1
+[    0.612468] ro.boot.mode=recovery
+[    0.612471] ro.boot.pmic.chipid=2730
+[    0.612474] ro.boot.flash.locked=1
+[    0.612478] ro.boot.oplus.euex=NULL
+[    0.612481] ro.boot.wdten=0
+[    0.612484] ro.boot.usbmux=0x0
+[    0.612487] ro.boot.vbmeta.size=47104
+[    0.612496] ro.boot.vbmeta.digest=33a35c4ee2fc1ea5f57b31463747679f69f792e12c4b2c332e674a26279650d3
+[    0.612499] ro.boot.vbmeta.hash_alg=sha256
+[    0.612503] ro.boot.vbmeta.avb_version=1.1
+[    0.612506] ro.boot.vbmeta.device_state=locked
+[    0.612509] ro.boot.vendor.skip.init=0
+[    0.612513] ro.boot.ddrsize=8192M
+[    0.612516] ro.boot.ddrsize.range=[6144,)
+[    0.612519] ro.boot.dswdten=disable
+[    0.612523] ro.boot.product.regionmark=T2_3760
+[    0.612526] ro.boot.dtbo_idx=7
+[    0.612530] ro.boot.dvfs_set=0x0
+[    0.612533] ro.boot.hardware=ums9230_hulk
+[    0.612537] ro.boot.operator=NULL
+[    0.612540] ro.boot.regionmark=LATAM
+[    0.612544] ro.boot.veritymode=enforcing
+[    0.612547] ro.boot.avb_version=1.2
+[    0.612550] ro.boot.oplus_nv_id=10011010
+[    0.612553] ro.boot.upgradeflag=false
+[    0.612558] ro.boot.boot_devices=soc/soc:ap-apb/201d0000.sdio
+[    0.612561] ro.boot.init_fatal_panic=true
+[    0.612566] ro.boot.force_normal_boot=0
+[    0.612569] ro.boot.verifiedbootstate=green
+[    0.612573] ro.baseband=unknown
+[    0.612576] ro.bootmode=recovery
+[    0.612580] ro.hardware=ums9230_hulk
+[    0.612583] ro.revision=0
+[    0.612587] ro.bootloader=unknown
+[    0.612590] ro.product.bootimage.name=ums9230_hulk_Natv
+[    0.612594] ro.product.bootimage.brand=realme
+[    0.612597] ro.product.bootimage.model=ums9230_hulk_Natv
+[    0.612600] ro.product.bootimage.device=ums9230_hulk
+[    0.612604] ro.product.bootimage.manufacturer=realme
+[    0.612607] ro.bootimage.build.id=UP1A.231005.007
+[    0.612615] ro.bootimage.build.date=Tue May 27 01:21:51 CST 2025
+[    0.612618] ro.bootimage.build.date.utc=1748280111
+[    0.612623] ro.bootimage.build.tags=release-keys
+[    0.612627] ro.bootimage.build.type=user
+[    0.612630] ro.bootimage.build.version.sdk=34
+[    0.612634] ro.bootimage.build.version.release=14
+[    0.612637] ro.bootimage.build.version.incremental=665
+[    0.612641] ro.bootimage.build.version.release_or_codename=14
+[    0.612645] ro.bootimage.build.fingerprint=realme/RMX3760/RE58C2:14/UP1A.231005.007/T.R4T2.1748272360:user/release-keys
+[    0.612663] ro.odm.build.date=Mon May 26 23:48:11 CST 2025
+[    0.612668] ro.odm.build.date.utc=1748274491
+[    0.612671] ro.odm.build.version.incremental=665
+[    0.612675] ro.odm.build.fingerprint=realme/RMX3760/RE58C2:13/TP1A.220624.014/T.R4T2.1748272360:user/release-keys
+[    0.612678] ro.product.odm.name=RMX3760
+[    0.612682] ro.product.odm.brand=realme
+[    0.612685] ro.product.odm.model=ums9230_hulk_Natv
+[    0.612688] ro.product.odm.device=RE58C2
+[    0.612692] ro.product.odm.manufacturer=realme
+[    0.612695] ro.adb.secure=1
+[    0.612698] ro.build.id=TP1A.220624.014
+[    0.612702] ro.build.date=Mon May 26 23:48:11 CST 2025
+[    0.612705] ro.build.date.utc=1748274491
+[    0.612708] ro.build.host=ubuntu-142-17
+[    0.612712] ro.build.tags=release-keys
+[    0.612715] ro.build.type=user
+[    0.612718] ro.build.user=root
+[    0.612722] ro.build.flavor=ums9230_hulk_Natv-user
+[    0.612726] ro.build.display.id=RMX3760export_14_C.78
+[    0.612730] ro.build.product=ums9230_hulk
+[    0.612733] ro.build.version.sdk=33
+[    0.612736] ro.build.version.base_os=
+[    0.612740] ro.build.version.release=13
+[    0.612743] ro.build.version.codename=REL
+[    0.612746] ro.build.version.incremental=665
+[    0.612750] ro.build.version.preview_sdk=0
+[    0.612753] ro.build.version.all_codenames=REL
+[    0.612756] ro.build.version.security_patch=2023-11-05
+[    0.612760] ro.build.version.release_or_codename=13
+[    0.612763] ro.build.version.preview_sdk_fingerprint=REL
+[    0.612766] ro.build.version.min_supported_target_sdk=23
+[    0.612770] ro.build.description=ums9230_hulk_Natv-user 13 TP1A.220624.014 665 release-keys
+[    0.612773] ro.build.characteristics=default
+[    0.612776] ro.build.system_root_image=false
+[    0.612780] ro.secure=1
+[    0.612783] ro.system.build.id=TP1A.220624.014
+[    0.612786] ro.system.build.date=Mon May 26 23:48:11 CST 2025
+[    0.612790] ro.system.build.date.utc=1748274491
+[    0.612793] ro.system.build.tags=release-keys
+[    0.612796] ro.system.build.type=user
+[    0.612801] ro.system.build.version.sdk=33
+[    0.612804] ro.system.build.version.release=13
+[    0.612808] ro.system.build.version.incremental=665
+[    0.612811] ro.system.build.version.release_or_codename=13
+[    0.612815] ro.system.build.fingerprint=realme/RMX3760/RE58C2:13/TP1A.220624.014/T.R4T2.1748272360:user/release-keys
+[    0.612819] ro.treble.enabled=true
+[    0.612822] ro.product.cpu.abi=arm64-v8a
+[    0.612826] ro.product.cpu.abilist=arm64-v8a,armeabi-v7a,armeabi
+[    0.612829] ro.product.cpu.abilist32=armeabi-v7a,armeabi
+[    0.612832] ro.product.cpu.abilist64=arm64-v8a
+[    0.612836] ro.product.name=RMX3760
+[    0.612839] ro.product.brand=realme
+[    0.612842] ro.product.build.id=TP1A.220624.014
+[    0.612846] ro.product.build.date=Mon May 26 23:48:11 CST 2025
+[    0.612849] ro.product.build.date.utc=1748274491
+[    0.612852] ro.product.build.tags=release-keys
+[    0.612856] ro.product.build.type=user
+[    0.612859] ro.product.build.version.sdk=33
+[    0.612862] ro.product.build.version.release=13
+[    0.612866] ro.product.build.version.incremental=665
+[    0.612869] ro.product.build.version.release_or_codename=13
+[    0.612872] ro.product.build.fingerprint=realme/RMX3760/RE58C2:13/TP1A.220624.014/T.R4T2.1748272360:user/release-keys
+[    0.612876] ro.product.model=ums9230_hulk_Natv
+[    0.612879] ro.product.device=RE58C2
+[    0.612883] ro.product.system.name=RMX3760
+[    0.612886] ro.product.system.brand=realme
+[    0.612889] ro.product.system.model=ums9230_hulk_Natv
+[    0.612893] ro.product.system.device=RE58C2
+[    0.612896] ro.product.system.manufacturer=realme
+[    0.612899] ro.product.product.name=RMX3760
+[    0.612903] ro.product.product.brand=realme
+[    0.612906] ro.product.product.model=ums9230_hulk_Natv
+[    0.612909] ro.product.product.device=RE58C2
+[    0.612913] ro.product.product.manufacturer=realme
+[    0.612916] ro.product.system_ext.name=RMX3760
+[    0.612919] ro.product.system_ext.brand=realme
+[    0.612923] ro.product.system_ext.model=ums9230_hulk_Natv
+[    0.612930] ro.product.system_ext.device=RE58C2
+[    0.612934] ro.product.system_ext.manufacturer=realme
+[    0.612938] ro.product.manufacturer=realme
+[    0.612941] ro.debuggable=0
+[    0.612944] ro.system_ext.build.id=TP1A.220624.014
+[    0.612948] ro.system_ext.build.date=Mon May 26 23:48:11 CST 2025
+[    0.612951] ro.system_ext.build.date.utc=1748274491
+[    0.612954] ro.system_ext.build.tags=release-keys
+[    0.612958] ro.system_ext.build.type=user
+[    0.612961] ro.system_ext.build.version.sdk=33
+[    0.612964] ro.system_ext.build.version.release=13
+[    0.612968] ro.system_ext.build.version.incremental=665
+[    0.612971] ro.system_ext.build.version.release_or_codename=13
+[    0.612974] ro.system_ext.build.fingerprint=realme/RMX3760/RE58C2:13/TP1A.220624.014/T.R4T2.1748272360:user/release-keys
+[    0.612978] ro.actionable_compatible_property.enabled=true
+[    0.612981] ro.vendor.build.id=TP1A.220624.014
+[    0.612985] ro.vendor.build.date=Mon May 26 23:48:11 CST 2025
+[    0.612989] ro.vendor.build.date.utc=1748274491
+[    0.612997] ro.vendor.build.tags=release-keys
+[    0.613001] ro.vendor.build.type=user
+[    0.613005] ro.vendor.build.version.sdk=33
+[    0.613008] ro.vendor.build.version.release=13
+[    0.613011] ro.vendor.build.version.incremental=665
+[    0.613015] ro.vendor.build.version.release_or_codename=13
+[    0.613018] ro.vendor.build.fingerprint=realme/RMX3760/RE58C2:13/TP1A.220624.014/T.R4T2.1748272360:user/release-keys
+[    0.613022] ro.vendor.product.cpu.abilist=arm64-v8a,armeabi-v7a,armeabi
+[    0.613025] ro.vendor.product.cpu.abilist32=armeabi-v7a,armeabi
+[    0.613028] ro.vendor.product.cpu.abilist64=arm64-v8a
+[    0.613032] ro.vendor.api_level=33
+[    0.613035] ro.product.board=ums9230_hulk
+[    0.613038] ro.product.vendor.name=RMX3760
+[    0.613041] ro.product.vendor.brand=realme
+[    0.613045] ro.product.vendor.model=ums9230_hulk_Natv
+[    0.613048] ro.product.vendor.device=RE58C2
+[    0.613051] ro.product.vendor.manufacturer=realme
+[    0.613054] ro.product.vendor_dlkm.name=RMX3760
+[    0.613058] ro.product.vendor_dlkm.brand=realme
+[    0.613061] ro.product.vendor_dlkm.model=ums9230_hulk_Natv
+[    0.613064] ro.product.vendor_dlkm.device=RE58C2
+[    0.613068] ro.product.vendor_dlkm.manufacturer=realme
+[    0.613071] ro.product.first_api_level=33
+[    0.613074] ro.vendor_dlkm.build.id=TP1A.220624.014
+[    0.613078] ro.vendor_dlkm.build.date=Mon May 26 23:48:11 CST 2025
+[    0.613081] ro.vendor_dlkm.build.date.utc=1748274491
+[    0.613084] ro.vendor_dlkm.build.tags=release-keys
+[    0.613087] ro.vendor_dlkm.build.type=user
+[    0.613091] ro.vendor_dlkm.build.version.sdk=33
+[    0.613094] ro.vendor_dlkm.build.version.release=13
+[    0.613097] ro.vendor_dlkm.build.version.incremental=665
+[    0.613102] ro.vendor_dlkm.build.version.release_or_codename=13
+[    0.613105] ro.vendor_dlkm.build.fingerprint=realme/RMX3760/RE58C2:13/TP1A.220624.014/T.R4T2.1748272360:user/release-keys
+[    0.613109] camera.disable_zsl_mode=1
+[    0.613112] ro.config.beep_issue=1
+[    0.613115] ro.config.insapp_issue=1
+[    0.613119] ro.config.supper_volume=1
+[    0.613122] ro.config.dtmf_vol_default=9
+[    0.613125] ro.config.ring_vol_default=10
+[    0.613128] ro.config.notification_vol_default=4
+[    0.613132] ro.dalvik.vm.native.bridge=0
+[    0.613135] ro.zygote=zygote64_32
+[    0.613138] dalvik.vm.isa.arm.variant=cortex-a55
+[    0.613142] dalvik.vm.isa.arm.features=default
+[    0.613145] dalvik.vm.isa.arm64.variant=cortex-a75
+[    0.613148] dalvik.vm.isa.arm64.features=default
+[    0.613152] dalvik.vm.dexopt.secondary=true
+[    0.613155] dalvik.vm.dexopt.thermal-cutoff=2
+[    0.613158] dalvik.vm.usejit=true
+[    0.613161] dalvik.vm.madvise.artfile.size=0
+[    0.613165] dalvik.vm.madvise.odexfile.size=0
+[    0.613168] dalvik.vm.madvise.vdexfile.size=0
+[    0.613171] dalvik.vm.dex2oat64.enabled=true
+[    0.613175] dalvik.vm.dex2oat-Xms=64m
+[    0.613178] dalvik.vm.dex2oat-Xmx=512m
+[    0.613181] dalvik.vm.minidebuginfo=true
+[    0.613185] dalvik.vm.appimageformat=lz4
+[    0.613188] dalvik.vm.usejitprofiles=true
+[    0.613195] dalvik.vm.image-dex2oat-Xms=64m
+[    0.613199] dalvik.vm.image-dex2oat-Xmx=64m
+[    0.613202] dalvik.vm.dex2oat-minidebuginfo=true
+[    0.613206] dalvik.vm.dex2oat-max-image-block-size=524288
+[    0.613209] dalvik.vm.dex2oat-resolve-startup-strings=true
+[    0.613215] persist.sys.dalvik.vm.lib.2=libart.so
+[    0.613219] debug.sf.latch_unsignaled=1
+[    0.613222] debug.sf.treat_170m_as_sRGB=1
+[    0.613226] debug.sf.enable_gpu_security=1
+[    0.613229] debug.sf.enable_skip_rotation=1
+[    0.613232] debug.sf.auto_latch_unsignaled=false
+[    0.613236] debug.sf.high_fps_late_sf_phase_offset_ns=-3000000
+[    0.613239] debug.sf.high_fps_late_app_phase_offset_ns=-4000000
+[    0.613242] debug.atrace.tags.enableflags=0
+[    0.613246] debug.renderengine.backend=skiaglthreaded
+[    0.613249] io.branch.preinstall.apps.path=/data/etc/appchannel/pre_install_apps.branch
+[    0.613252] ro.sr.displaysize.lowresolution=1
+[    0.613257] ro.sr.displaysize.defaultresolution=0
+[    0.613260] ro.com.google.lens.oem_camera_package=com.android.camera2
+[    0.613265] ro.com.google.gmsversion=13_202301
+[    0.613268] ro.com.google.clientidbase=android-oppo
+[    0.613272] ro.opa.eligible_device=true
+[    0.613275] ro.sys.pwctl.ultrasaving=1
+[    0.613278] ro.sys.sdcardfs=true
+[    0.613282] ro.mtpi.61897339427297334781={mtLinkId:thnc63}
+[    0.613285] ro.oppo.region=unknown
+[    0.613288] ro.sprd.pwctl.ultra.message=1
+[    0.613292] ro.sprd.superresolution=1
+[    0.613295] ro.wifi.channels=
+[    0.613298] ro.allow.mock.location=0
+[    0.613302] ro.build.version.ota=RMX3760export_14.C.78_3780_202505262254
+[    0.613356] ro.build.version.known_codenames=Base,Base11,Cupcake,Donut,Eclair,Eclair01,EclairMr1,Froyo,Gingerbread,GingerbreadMr1,Honeycomb,HoneycombMr1,HoneycombMr2,IceCreamSandwich,IceCreamSandwichMr1,JellyBean,JellyBeanMr1,JellyBeanMr2,Kitkat,KitkatWatch,Lollipop,LollipopMr1,M,N,NMr1,O,OMr1,P,Q,R,S,Sv2,Tiramisu
+[    0.613362] ro.build.version.release_or_preview_display=13
+[    0.613366] ro.build.keystore.path=/storage/emulated/0/Download/.lii/
+[    0.613370] ro.build.device_family=OPUMS9230H
+[    0.613373] ro.dirac.acs.storeSettings=1
+[    0.613377] ro.dirac.config=184
+[    0.613380] ro.dirac.poolsize=5
+[    0.613384] ro.media.wfd.rgb.enabled=true
+[    0.613387] ro.media.recoderEIS.enabled=true
+[    0.613390] ro.radio.dataonly=0
+[    0.613394] ro.kernel.version=5.4
+[    0.613397] ro.system.product.cpu.abilist=arm64-v8a,armeabi-v7a,armeabi
+[    0.613400] ro.system.product.cpu.abilist32=armeabi-v7a,armeabi
+[    0.613404] ro.system.product.cpu.abilist64=arm64-v8a
+[    0.613407] ro.system.component.label=13-realme/u/sprd/vendor_master/ums9230-250526
+[    0.613410] ro.unipnp.switch=true
+[    0.613414] ro.channel.ru.litres.android=oppo_int
+[    0.613417] ro.netflix.signup=1
+[    0.613420] ro.netflix.channel=21871210-0da0-11ea-a839-3598d072c882
+[    0.613424] ro.product.locale=en-US
+[    0.613427] ro.product.hardware=ums9230_hulk
+[    0.613430] ro.product.assistanttouch=false
+[    0.613434] ro.product.name_for_attestation=
+[    0.613437] ro.product.brand_for_attestation=
+[    0.613440] ro.product.model_for_attestation=
+[    0.613444] ro.simlock.onekey.lock=0
+[    0.613447] ro.simlock.unlock.bynv=0
+[    0.613450] ro.simlock.unlock.autoshow=0
+[    0.613454] ro.storage.flash_type=2
+[    0.613457] ro.facebook.partnerid=oppo:de8df4f5-bc34-4319-892c-cdf507e7e268
+[    0.613460] ro.launcher.dynamic=false
+[    0.613464] ro.launcher.multimode=true
+[    0.613467] ro.launcher.notifbadge.count=true
+[    0.613470] ro.launcher.desktopgrid=true
+[    0.613474] ro.linkedin.channel=realme_PRELOAD
+[    0.613477] ro.recovery.ui.dropscreen=1
+[    0.613480] ro.recovery.ui.margin_height=45
+[    0.613484] ro.appsflyer.preinstall.path=/data/etc/appchannel/pre_install.appsflyer
+[    0.613487] ro.preinstall.path=/data/etc/appchannel
+[    0.613490] ro.trackingId.com.lzd.appid=/data/etc/appchannel/lazadaChannel.txt
+[    0.613494] ro.postinstall.fstab.prefix=/product
+[    0.613497] ro.secure_boot.state=1
+[    0.613501] ro.country_operator=unknown
+[    0.613504] ro.support_one_handed_mode=true
+[    0.613513] ru.ivi.client=oppo_int
+[    0.613517] apr.flag.bootmode=1
+[    0.613521] oppo.eng.factory.no=unknown
+[    0.613524] adjust.preinstall.path=/data/etc/appchannel/adjust.preinstall
+[    0.613527] persist.netmon.linger=10000
+[    0.613531] persist.nhmonitor.enable=on
+[    0.613534] persist.fingerprint.location=RIGHT
+[    0.613537] oem_trusted_authority=com.sprd.android.USCPhotosProvider.providers.SpecialTypesProvider
+[    0.613541] oem_trusted_certificate=57152BDFBA78F435FA884585FDF2859684BA0316
+[    0.613547] ro.frp.pst=/dev/block/by-name/persist
+[    0.613551] ro.oem.key1=pub
+[    0.613554] ro.apex.updatable=true
+[    0.613558] ro.boot.product.hardware.sku=nfc
+[    0.613561] ro.boot.slot_suffix=_b
+[    0.613564] ro.boot.dynamic_partitions=true
+[    0.613567] ro.hwui.use_vulkan=
+[    0.613571] ro.board.platform=ums9230
+[    0.613574] ro.build.ab_update=true
+[    0.613577] ro.carrier=oversea
+[    0.613581] ro.hardware.audio.primary=whale
+[    0.613584] ro.hardware.nfc_nci=pn8x
+[    0.613587] ro.hardware.sensors=unisoc
+[    0.613590] ro.hardware.hwcomposer=unisoc
+[    0.613594] pm.dexopt.ab-ota=speed-profile
+[    0.613597] pm.dexopt.shared=speed
+[    0.613600] pm.dexopt.cmdline=verify
+[    0.613604] pm.dexopt.install=speed-profile
+[    0.613607] pm.dexopt.inactive=verify
+[    0.613610] pm.dexopt.bg-dexopt=speed-profile
+[    0.613613] pm.dexopt.first-boot=verify
+[    0.613617] pm.dexopt.install-bulk=speed-profile
+[    0.613620] pm.dexopt.install-fast=skip
+[    0.613623] pm.dexopt.install-bulk-secondary=verify
+[    0.613627] pm.dexopt.install-bulk-downgraded=verify
+[    0.613630] pm.dexopt.install-bulk-secondary-downgraded=extract
+[    0.613636] ro.build.fingerprint=realme/RMX3760/RE58C2:13/TP1A.220624.014/665:user/release-keys
+[    0.613665] ro.opengles.version=196610
+[    0.613672] graphics.gpu.profiler.support=true
+[    0.613678] ro.gsid.image_running=0
+[    0.613682] gsid.image_installed=0
+[    0.614016] init.svc.charger=running
+[    0.614031] init.svc.ueventd=running
+[    0.614040] init.svc.recovery=running
+[    0.614044] init.svc.servicemanager=running
+[    0.614048] init.svc.create_splloader_dual_slot_byname_path=stopped
+[    0.614051] ro.lmk.swap_util_max=90
+[    0.614055] ro.lmk.kill_timeout_ms=150
+[    0.614058] ro.lmk.thrashing_limit=30
+[    0.614062] ro.lmk.filecache_min_kb=153600
+[    0.614065] ro.lmk.stall_limit_critical=40
+[    0.614068] ro.lmk.psi_complete_stall_ms=200
+[    0.614072] ro.lmk.thrashing_limit_decay=20
+[    0.614075] ro.lmk.limit_killing_array_kb=2097152,1572864,1228800,460800,358400
+[    0.614079] ro.lmk.swap_is_low_kill_enable=1
+[    0.614082] ro.lmk.swap_free_low_percentage=25
+[    0.614086] log.tag.stats_log=I
+[    0.614089] ro.logd.size.stats=64K
+[    0.614446] ro.product.ab_ota_partitions=boot,dtbo,l_agdsp,l_deltanv,l_fixnv1,l_fixnv2,l_gdsp,l_ldsp,l_modem,mmcblk0boot1,odm,pm_sys,product,sdc,sml,system,system_ext,teecfg,trustos,uboot,vbmeta,vbmeta_odm,vbmeta_product,vbmeta_system,vbmeta_system_ext,vbmeta_vendor,vendor,vendor_boot,vendor_dlkm
+[    0.614461] pm.dexopt.post-boot=extract
+[    0.614466] pm.dexopt.boot-after-ota=verify
+[    0.614470] ro.property_service.version=2
+[    0.614474] persist.radio.multisim.config=dsds
+[    0.614480] ro.minui.pixel_format=RGBX_8888
+[    0.614783] ro.boot.serialno=0I74312I24101817
+[    0.614796] ro.serialno=0I74312I24101817
+[    0.614800] ro.setupwizard.rotation_locked=true
+[    0.614804] setupwizard.theme=glif_v3_light
+[    0.614807] setupwizard.feature.baseline_setupwizard_enabled=true
+[    0.614811] security.perf_harden=1
+[    0.614815] ro.soc.model=T612
+[    0.614818] ro.soc.manufacturer=Spreadtrum
+[    0.614822] external_storage.projid.enabled=1
+[    0.614825] external_storage.casefold.enabled=1
+[    0.614829] external_storage.sdcardfs.enabled=0
+[    0.614832] persist.sys.sf.color_saturation=1.0
+[    0.614835] ro.sf.lcd_density=320
+[    0.614839] ro.surface_flinger.use_vr_flinger=false
+[    0.614842] ro.surface_flinger.has_HDR_display=false
+[    0.614845] ro.surface_flinger.set_idle_timer_ms=4000
+[    0.614849] ro.surface_flinger.set_touch_timer_ms=200
+[    0.614865] ro.surface_flinger.use_context_priority=true
+[    0.614870] ro.surface_flinger.has_wide_color_display=false
+[    0.614874] ro.surface_flinger.set_display_power_timer_ms=1000
+[    0.614878] ro.surface_flinger.primary_display_orientation=ORIENTATION_0
+[    0.614881] ro.surface_flinger.vsync_event_phase_offset_ns=1000000
+[    0.614884] ro.surface_flinger.max_virtual_display_dimension=4096
+[    0.614888] ro.surface_flinger.running_without_sync_framework=false
+[    0.614891] ro.surface_flinger.vsync_sf_event_phase_offset_ns=1000000
+[    0.614894] ro.surface_flinger.start_graphics_allocator_service=false
+[    0.614898] ro.surface_flinger.max_frame_buffer_acquired_buffers=3
+[    0.614901] ro.surface_flinger.present_time_offset_from_vsync_ns=0
+[    0.614905] ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
+[    0.614908] ro.surface_flinger.use_content_detection_for_refresh_rate=true
+[    0.614915] dev.mnt.blk.nuovo=mmcblk0p1
+[    0.614918] dev.mnt.dev.nuovo=mmcblk0p1
+[    0.614922] dev.mnt.rootdisk.nuovo=mmcblk0
+[    0.614925] net.bt.name=Android
+[    0.614929] persist.sys.3d.calibraion=1
+[    0.614932] persist.sys.bl.boost=true
+[    0.614935] persist.sys.bl.clearuserdata=true
+[    0.614939] persist.sys.pq.dci.enabled=1
+[    0.614942] persist.sys.pq.cabc.enabled=1
+[    0.614945] persist.sys.pq.enabled=1
+[    0.614949] persist.sys.ss.sr.enable=true
+[    0.614957] persist.sys.ss.hmm=true
+[    0.614960] persist.sys.ss.uhc.enable=true
+[    0.614963] persist.sys.ss.habit=true
+[    0.614968] persist.sys.ss.scene=true
+[    0.614972] persist.sys.ss.track=true
+[    0.614975] persist.sys.ss.enable=true
+[    0.614978] persist.sys.ss.scroll=false
+[    0.614982] persist.sys.ss.predict=false
+[    0.614985] persist.sys.apr.reload=0
+[    0.614988] persist.sys.apr.enabled=0
+[    0.614992] persist.sys.apr.lifetime=0
+[    0.614996] persist.sys.apr.rlchanged=800
+[    0.614999] persist.sys.apr.testgroup=CSSLAB
+[    0.615003] persist.sys.apr.autoupload=1
+[    0.615006] persist.sys.apr.reportlevel=2
+[    0.615009] persist.sys.apr.timechanged=180
+[    0.615013] persist.sys.apr.intervaltime=1
+[    0.615016] persist.sys.apr.exceptionnode=0
+[    0.615019] persist.sys.cam.ui.optimization=true
+[    0.615023] persist.sys.cam.3dnr=false
+[    0.615026] persist.sys.cam.aeaf.separate=false
+[    0.615029] persist.sys.cam.eois.dc.back=false
+[    0.615032] persist.sys.cam.eois.dc.front=false
+[    0.615037] persist.sys.cam.eois.dv.back=false
+[    0.615040] persist.sys.cam.eois.dv.front=false
+[    0.615044] persist.sys.cam.five.minute.memory.enable=true
+[    0.615047] persist.sys.cam.hulk.device=true
+[    0.615050] persist.sys.cam.wide.8M=true
+[    0.615054] persist.sys.cam.wide.power=true
+[    0.615057] persist.sys.cam.limit.number=true
+[    0.615060] persist.sys.cam.night.threshold=300
+[    0.615064] persist.sys.cam.quick=false
+[    0.615067] persist.sys.cam.beauty.fullfuc=true
+[    0.615070] persist.sys.cam.manual.zoom.enable=false
+[    0.615074] persist.sys.cam.manual.focus=true
+[    0.615077] persist.sys.cam.manual.shutter=true
+[    0.615080] persist.sys.cam.number.support=2
+[    0.615084] persist.sys.cam.battery.flash=15
+[    0.615087] persist.sys.cam.customer.filter=true
+[    0.615090] persist.sys.cam.portrait.mirror.enable=false
+[    0.615094] persist.sys.cam.auto_3dnr=false
+[    0.615097] persist.sys.cam.voicephoto=false
+[    0.615100] persist.sys.cam.highresolution.hdr=false
+[    0.615104] persist.sys.log.yloglite=0
+[    0.615107] persist.sys.usb.config=none
+[    0.615110] persist.sys.wfc.supp_dual_sim=true
+[    0.615114] persist.sys.cabc.support=true
+[    0.615117] persist.sys.cam3.type=back_blur
+[    0.615120] persist.sys.cam3.multi.cam.id=2
+[    0.615124] persist.sys.csvt=false
+[    0.615127] persist.sys.fuse.passthrough.enable=true
+[    0.615130] persist.sys.pano.nr=1
+[    0.615134] persist.sys.audio.source=true
+[    0.615137] persist.sys.oplus.charger=true
+[    0.615140] persist.sys.oplus.nandswap=true
+[    0.615143] persist.sys.oplus.nandswap.condition=true
+[    0.615148] persist.sys.power.touch=0
+[    0.615156] persist.sys.power.touch.touched=false
+[    0.615160] persist.sys.pwctl.wl=1
+[    0.615163] persist.sys.pwctl.gps=1
+[    0.615167] persist.sys.pwctl.gps.onlysave=0
+[    0.615170] persist.sys.pwctl.guru=1
+[    0.615174] persist.sys.pwctl.enable=1
+[    0.615177] persist.sys.pwctl.appidle=1
+[    0.615182] persist.sys.pwctl.appidle.force=1
+[    0.615187] persist.sys.pwctl.bgclean=1
+[    0.615192] persist.sys.pwctl.appstats=0
+[    0.615195] persist.sys.pwctl.onlysave=0
+[    0.615199] persist.sys.vilte.socket=ap
+[    0.615202] persist.sys.glance.lockscreen=1
+[    0.615205] persist.sys.support.vt=true
+[    0.615209] persist.sys.support.typeC=true
+[    0.615212] persist.sys.support.antenna=true
+[    0.615215] persist.sys.sdcardfs=force_on
+[    0.615219] persist.sys.extrainfo=
+[    0.615222] persist.sys.heartbeat.enable=1
+[    0.615225] persist.sys.lowlightpq.enabled=true
+[    0.615229] persist.sys.callforwarding=0
+[    0.615232] persist.sys.hight_volume_switch=true
+[    0.615235] service.wait_for_bootanim=1
+[    0.615239] ro.config.ringtone=ringtone_000.ogg,ringtone_000.ogg
+[    0.615242] ro.config.alarm_alert=delight.ogg
+[    0.615245] ro.config.alarm_vol_default=12
+[    0.615249] ro.config.media_vol_default=10
+[    0.615252] ro.config.notification_sound=notification_000.ogg
+[    0.615255] ro.config.system_vol_default=4
+[    0.615258] ro.config.vc_call_vol_default=5
+[    0.615262] ro.com.android.dataroaming=false
+[    0.615265] ro.radio.noril=0
+[    0.615268] ro.telephony.default_network=9
+[    0.615272] sys.usb.configfs=1
+[    0.615275] sys.usb.controller=musb-hdrc.1.auto
+[    0.615281] ro.vendor.arm.egl.configs.r5_g6_b5_a0_16bit_fixed.hal_format=0x4
+[    0.615284] ro.vendor.arm.egl.configs.r5_g6_b5_a0_16bit_fixed.recordable=false
+[    0.615288] ro.vendor.arm.egl.configs.r5_g6_b5_a0_16bit_fixed.framebuffer_target=true
+[    0.615291] ro.vendor.arm.egl.configs.r8_g8_b8_a0_24bit_fixed.hal_format=0x2
+[    0.615295] ro.vendor.arm.egl.configs.r8_g8_b8_a0_24bit_fixed.recordable=false
+[    0.615298] ro.vendor.arm.egl.configs.r8_g8_b8_a0_24bit_fixed.framebuffer_target=false
+[    0.615301] ro.vendor.arm.egl.configs.r8_g8_b8_a0_32bit_fixed.hal_format=0x2
+[    0.615305] ro.vendor.arm.egl.configs.r8_g8_b8_a0_32bit_fixed.recordable=false
+[    0.615308] ro.vendor.arm.egl.configs.r8_g8_b8_a0_32bit_fixed.framebuffer_target=false
+[    0.615312] ro.vendor.arm.egl.configs.r8_g8_b8_a8_32bit_fixed.hal_format=0x1
+[    0.615315] ro.vendor.arm.egl.configs.r8_g8_b8_a8_32bit_fixed.recordable=true
+[    0.615318] ro.vendor.arm.egl.configs.r8_g8_b8_a8_32bit_fixed.framebuffer_target=true
+[    0.615324] ro.vendor.arm.egl.configs.r10_g10_b10_a2_32bit_fixed.hal_format=0x2b
+[    0.615328] ro.vendor.arm.egl.configs.r10_g10_b10_a2_32bit_fixed.recordable=false
+[    0.615331] ro.vendor.arm.egl.configs.r10_g10_b10_a2_32bit_fixed.framebuffer_target=false
+[    0.615335] ro.vendor.arm.egl.configs.r16_g16_b16_a16_64bit_float.hal_format=0x16
+[    0.615338] ro.vendor.arm.egl.configs.r16_g16_b16_a16_64bit_float.recordable=false
+[    0.615341] ro.vendor.arm.egl.configs.r16_g16_b16_a16_64bit_float.framebuffer_target=false
+[    0.615345] ro.vendor.arm.egl.configs.r8_g8_b8_a0_24bit_yuv_special.hal_format=0x23
+[    0.615348] ro.vendor.arm.egl.configs.r8_g8_b8_a0_24bit_yuv_special.framebuffer_target=false
+[    0.615352] ro.vendor.arm.gralloc.no_afbc_usage_mask=0x60000000
+[    0.615355] ro.vendor.arm.gralloc.no_afbc_usage_flags=0x20000000
+[    0.615358] ro.vendor.arm.gralloc.afrc_luma_usage_mask=0x70000000
+[    0.615362] ro.vendor.arm.gralloc.afrc_rgba_usage_mask=0x70000000
+[    0.615365] ro.vendor.arm.gralloc.afrc_luma_usage_flags=0x50000000,0x60000000,0x40000000
+[    0.615368] ro.vendor.arm.gralloc.afrc_rgba_usage_flags=0x50000000,0x60000000,0x40000000
+[    0.615372] ro.vendor.arm.gralloc.afrc_chroma_usage_mask=0x180000000000000
+[    0.615375] ro.vendor.arm.gralloc.afrc_chroma_usage_flags=0x100000000000000,0x80000000000000,0x180000000000000
+[    0.615379] ro.vendor.arm.gralloc.shared_access_usage_mask=0x50000000
+[    0.615382] ro.vendor.arm.gralloc.shared_access_usage_flags=0x10000000
+[    0.615389] ro.vendor.arm.gralloc.force_back_buffer_usage_mask=0x40000000000000
+[    0.615393] ro.vendor.arm.gralloc.force_back_buffer_usage_flags=0x40000000000000
+[    0.615399] ro.odm.build.id=TP1A.220624.014
+[    0.615403] ro.odm.build.tags=release-keys
+[    0.615406] ro.odm.build.type=user
+[    0.615410] ro.odm.build.version.sdk=33
+[    0.615413] ro.odm.build.version.release=13
+[    0.615417] ro.odm.build.version.release_or_codename=13
+[    0.615420] ro.odm.product.cpu.abilist=arm64-v8a,armeabi-v7a,armeabi
+[    0.615423] ro.odm.product.cpu.abilist32=armeabi-v7a,armeabi
+[    0.615427] ro.odm.product.cpu.abilist64=arm64-v8a
+[    0.615430] ro.odm.oemcrypto.enabled=false
+[    0.615435] ro.build.display.software=RMX3760export_14_C.78_
+[    0.615439] ro.vendor.ko.mount.point=/mnt/vendor
+[    0.615442] ro.vendor.mmi.use.audio.whale.hal=1
+[    0.615446] ro.vendor.tee.gpapi.support=true
+[    0.615449] ro.vendor.tui.chip=qogirl6
+[    0.615452] ro.vendor.tui.support=false
+[    0.615456] ro.vendor.wcn.gpschip=marlin3lite
+[    0.615459] ro.vendor.wcn.hardware.etcpath=/odm/firmware
+[    0.615463] ro.vendor.wcn.hardware.product=marlin3_lite
+[    0.615467] ro.vendor.ldsp.log=/dev/slog_ldsp
+[    0.615471] ro.vendor.build.version.ota=RMX3760export_14.C.78_3780_202505262254
+[    0.615474] ro.vendor.soter.support=false
+[    0.615478] ro.vendor.camera.dualcamera_cali_time=3
+[    0.615482] ro.vendor.camera.dualcamera_cali_enable=1
+[    0.615485] ro.vendor.keybox.id.value=unknown
+[    0.615489] ro.vendor.display.sr=true
+[    0.615492] ro.vendor.gnsschip=marlin3lite
+[    0.615495] ro.vendor.component.label=13-realme/u/sprd/vendor_master/ums9230-250526
+[    0.615499] ro.hardware.dpu=unisoc
+[    0.615502] ro.hardware.gsp=unisoc
+[    0.615505] ro.hardware.enhance=unisoc
+[    0.615509] vendor.media.omx=0
+[    0.615512] persist.vendor.engineer.hide.log=6996
+[    0.615515] persist.vendor.engineer.hide.warn=6776
+[    0.615519] persist.vendor.powerhint.hint.enable=true
+[    0.615847] ro.vendor.product.partitionpath=/dev/block/by-name/
+[    0.615886] ro.virtual_ab.enabled=true
+[    0.615893] ro.virtual_ab.io_uring.enabled=true
+[    0.615897] ro.virtual_ab.userspace.snapshots.enabled=true
+[    0.615900] ro.virtual_ab.compression.xor.enabled=true
+[    0.615904] ro.virtual_ab.compression.enabled=true
+[    0.615922] ro.vndk.version=33
+[    0.615927] ro.product.vndk.version=33
+[    0.615983] sys.internal.emulated=1
+[    0.615989] persist.storage.type=2
+[    0.616129]
+[    0.616135]
+[    0.616139] -- Wiping data...
+[    0.673384] I:[libfs_mgr]Running /system/bin/fsck.f2fs -a -c 10000 --debug-cache /dev/block/mmcblk0p55
+[    0.753478] libc: Unable to set property "ro.boottime.init.fsck.metadata" to "79": error code: 0x18
+[    0.760414] I:[libfs_mgr]__mount(source=/dev/block/by-name/metadata,target=/metadata,type=f2fs)=0: Success
+[    0.760791] libc: Unable to set property "ro.boottime.init.mount.metadata" to "6": error code: 0x18
+[    0.761815] I:Creating logical partitions with snapshots as needed
+[    0.786712] I:[libfs_mgr]Created logical partition system_b on device /dev/block/dm-0
+[    0.808797] I:[libfs_mgr]Created logical partition system_ext_b on device /dev/block/dm-1
+[    0.830350] I:[libfs_mgr]Created logical partition vendor_b on device /dev/block/dm-2
+[    0.853566] I:[libfs_mgr]Created logical partition product_b on device /dev/block/dm-3
+[    0.875619] I:[libfs_mgr]Created logical partition odm_b on device /dev/block/dm-4
+[    0.897143] I:[libfs_mgr]Created logical partition vendor_dlkm_b on device /dev/block/dm-5
+[    0.897176] I:Skip mapping partition system_b-cow in group cow
+[    0.897182] I:Skip mapping partition system_ext_b-cow in group cow
+[    0.897186] I:Skip mapping partition vendor_b-cow in group cow
+[    0.897190] I:Skip mapping partition product_b-cow in group cow
+[    0.897193] I:Skip mapping partition odm_b-cow in group cow
+[    0.897197] I:Skip mapping partition vendor_dlkm_b-cow in group cow
+[    0.897200] I:Created logical partitions with snapshot.
+[    0.897527] I:CheckMergeState for snapshots returned: 0
+[    0.897561] I:ProcessUpdateState handling state: 0
+[    0.897566] I:Update state in recovery: none
+[    0.951272] I:Successfully unmapped snapshot system_b
+[    0.999083] I:Successfully unmapped snapshot system_ext_b
+[    1.027642] I:Successfully unmapped snapshot vendor_b
+[    1.070774] I:Successfully unmapped snapshot product_b
+[    1.091023] I:Successfully unmapped snapshot odm_b
+[    1.127445] I:Successfully unmapped snapshot vendor_dlkm_b
+[    1.127563] I:Successfully unmapped snapshot system_b-cow
+[    1.127643] I:Successfully unmapped snapshot system_ext_b-cow
+[    1.127719] I:Successfully unmapped snapshot vendor_b-cow
+[    1.127796] I:Successfully unmapped snapshot product_b-cow
+[    1.127872] I:Successfully unmapped snapshot odm_b-cow
+[    1.127953] I:Successfully unmapped snapshot vendor_dlkm_b-cow
+[    1.175467] Formatting /data...
+[    9.706164] I:format_volume: wipe metadata encrypted /dev/block/by-name/userdata with size 238566768640
+[    9.708965] I:[libfs_mgr]Running /system/bin/fsck.f2fs -a -c 10000 --debug-cache /dev/block/mmcblk0p48
+[    9.746800] libc: Unable to set property "ro.boottime.init.fsck.cache" to "39": error code: 0x18
+[    9.757392] I:[libfs_mgr]__mount(source=/dev/block/by-name/cache,target=/cache,type=f2fs)=0: Success
+[    9.758349] libc: Unable to set property "ro.boottime.init.mount.cache" to "10": error code: 0x18
+[    9.787011] Formatting /cache...
+[    9.902881]
+[    9.902917]     F2FS-tools: mkfs.f2fs Ver: 1.14.0 (2020-08-24)
+[    9.902922]
+[    9.902926] Info: Disable heap-based policy
+[    9.902930] Info: Debug level = 1
+[    9.902934] Info: Trim is enabled
+[    9.902937] Info: Set conf for android
+[    9.902941] Info: Enable Project quota
+[    9.902944] Info: not exist /proc/version!
+[    9.902948] Info: Segments per section = 1
+[    9.902951] Info: Sections per zone = 1
+[    9.902954] Info: sector size = 512
+[    9.902958] Info: total sectors = 131072 (64 MB)
+[    9.902961] Info: zone aligned segment0 blkaddr: 512
+[    9.902964] Info: add quota type = 0 => 4
+[    9.902968] Info: add quota type = 1 => 5
+[    9.902971] Info: add quota type = 2 => 6
+[    9.902974] Info: format version with
+[    9.902977]   "5.4.254-android12-9-g46eed20d7a9b-ab665"
+[    9.902981] Info: [/dev/block/by-name/cache] Discarding device
+[    9.902984] Info: Secure Discarded 0 MB
+[    9.902988] [f2fs_init_sit_area: 626] 	Filling sit area at offset 0x00600000
+[    9.902991] [f2fs_init_nat_area: 660] 	Filling nat area at offset 0x00a00000
+[    9.902994] [f2fs_write_root_inode:1274] 	Writing root inode (hot node), 1000 0 200 at offset 0x00004096
+[    9.902998] [f2fs_write_default_quota:1350] 	Writing quota data, at offset 00001601, 00001602
+[    9.903002] [f2fs_write_qf_inode:1407] 	Writing quota inode (hot node), 1000 0 200 at offset 0x00004097
+[    9.903005] [f2fs_write_default_quota:1350] 	Writing quota data, at offset 00001603, 00001604
+[    9.903009] [f2fs_write_qf_inode:1407] 	Writing quota inode (hot node), 1000 0 200 at offset 0x00004098
+[    9.903013] [f2fs_write_default_quota:1350] 	Writing quota data, at offset 00001605, 00001606
+[    9.903017] [f2fs_write_qf_inode:1407] 	Writing quota inode (hot node), 1000 0 200 at offset 0x00004099
+[    9.903021] [f2fs_update_nat_root:1461] 	Writing nat root, at offset 0x00000a00
+[    9.903024] [f2fs_add_default_dentry_root:1658] 	Writing default dentry root, at offset 0x00001600
+[    9.903028] Info: Overprovision ratio = 35.000%
+[    9.903031] Info: Overprovision segments = 16 (GC reserved = 13)
+[    9.903035] [f2fs_write_check_point_pack: 819] 	Writing main segments, cp at offset 0x00000200
+[    9.903038] [f2fs_write_check_point_pack: 975] 	Writing Segment summary for HOT/WARM/COLD_DATA, at offset 0x00000201
+[    9.903044] [f2fs_write_check_point_pack:1002] 	Writing Segment summary for HOT_NODE, at offset 0x00000202
+[    9.903048] [f2fs_write_check_point_pack:1014] 	Writing Segment summary for WARM_NODE, at offset 0x00000203
+[    9.903052] [f2fs_write_check_point_pack:1025] 	Writing Segment summary for COLD_NODE, at offset 0x00000204
+[    9.903088] [f2fs_write_check_point_pack:1033] 	Writing cp page2, at offset 0x00000205
+[    9.903093] [f2fs_write_check_point_pack:1053] 	Writing NAT bits pages, at offset 0x000003ff
+[    9.903097] [f2fs_write_check_point_pack:1074] 	Writing cp page 1 of checkpoint pack 2, at offset 0x00000400
+[    9.903101] [f2fs_write_check_point_pack:1093] 	Writing cp page 2 of checkpoint pack 2, at offset 0x00000405
+[    9.903104] [f2fs_write_super_block:1126] 	Writing super block, at offset 0x00000000
+[    9.903108] Info: format successful
+[    9.904871] I:[libfs_mgr]Running /system/bin/fsck.f2fs -a -c 10000 --debug-cache /dev/block/mmcblk0p48
+[    9.919367] libc: Unable to set property "ro.boottime.init.fsck.cache" to "14": error code: 0x18
+[    9.932963] I:[libfs_mgr]__mount(source=/dev/block/by-name/cache,target=/cache,type=f2fs)=0: Success
+[    9.933836] libc: Unable to set property "ro.boottime.init.mount.cache" to "13": error code: 0x18
+[    9.986435] Formatting /metadata...
+[   10.054011]
+[   10.054046]     F2FS-tools: mkfs.f2fs Ver: 1.14.0 (2020-08-24)
+[   10.054052]
+[   10.054056] Info: Disable heap-based policy
+[   10.054060] Info: Debug level = 1
+[   10.054064] Info: Trim is enabled
+[   10.054067] Info: Set conf for android
+[   10.054071] Info: Enable Project quota
+[   10.054074] Info: not exist /proc/version!
+[   10.054077] Info: Segments per section = 1
+[   10.054081] Info: Sections per zone = 1
+[   10.054084] Info: sector size = 512
+[   10.054087] Info: total sectors = 131072 (64 MB)
+[   10.054091] Info: zone aligned segment0 blkaddr: 512
+[   10.054094] Info: add quota type = 0 => 4
+[   10.054097] Info: add quota type = 1 => 5
+[   10.054101] Info: add quota type = 2 => 6
+[   10.054104] Info: format version with
+[   10.054108]   "5.4.254-android12-9-g46eed20d7a9b-ab665"
+[   10.054133] Info: [/dev/block/by-name/metadata] Discarding device
+[   10.054136] Info: Secure Discarded 0 MB
+[   10.054140] [f2fs_init_sit_area: 626] 	Filling sit area at offset 0x00600000
+[   10.054144] [f2fs_init_nat_area: 660] 	Filling nat area at offset 0x00a00000
+[   10.054148] [f2fs_write_root_inode:1274] 	Writing root inode (hot node), 1000 0 200 at offset 0x00004096
+[   10.054151] [f2fs_write_default_quota:1350] 	Writing quota data, at offset 00001601, 00001602
+[   10.054155] [f2fs_write_qf_inode:1407] 	Writing quota inode (hot node), 1000 0 200 at offset 0x00004097
+[   10.054158] [f2fs_write_default_quota:1350] 	Writing quota data, at offset 00001603, 00001604
+[   10.054162] [f2fs_write_qf_inode:1407] 	Writing quota inode (hot node), 1000 0 200 at offset 0x00004098
+[   10.054165] [f2fs_write_default_quota:1350] 	Writing quota data, at offset 00001605, 00001606
+[   10.054169] [f2fs_write_qf_inode:1407] 	Writing quota inode (hot node), 1000 0 200 at offset 0x00004099
+[   10.054172] [f2fs_update_nat_root:1461] 	Writing nat root, at offset 0x00000a00
+[   10.054176] [f2fs_add_default_dentry_root:1658] 	Writing default dentry root, at offset 0x00001600
+[   10.054179] Info: Overprovision ratio = 35.000%
+[   10.054183] Info: Overprovision segments = 16 (GC reserved = 13)
+[   10.054186] [f2fs_write_check_point_pack: 819] 	Writing main segments, cp at offset 0x00000200
+[   10.054189] [f2fs_write_check_point_pack: 975] 	Writing Segment summary for HOT/WARM/COLD_DATA, at offset 0x00000201
+[   10.054193] [f2fs_write_check_point_pack:1002] 	Writing Segment summary for HOT_NODE, at offset 0x00000202
+[   10.054196] [f2fs_write_check_point_pack:1014] 	Writing Segment summary for WARM_NODE, at offset 0x00000203
+[   10.054200] [f2fs_write_check_point_pack:1025] 	Writing Segment summary for COLD_NODE, at offset 0x00000204
+[   10.054203] [f2fs_write_check_point_pack:1033] 	Writing cp page2, at offset 0x00000205
+[   10.054207] [f2fs_write_check_point_pack:1053] 	Writing NAT bits pages, at offset 0x000003ff
+[   10.054210] [f2fs_write_check_point_pack:1074] 	Writing cp page 1 of checkpoint pack 2, at offset 0x00000400
+[   10.054214] [f2fs_write_check_point_pack:1093] 	Writing cp page 2 of checkpoint pack 2, at offset 0x00000405
+[   10.054217] [f2fs_write_super_block:1126] 	Writing super block, at offset 0x00000000
+[   10.054238] Info: format successful
+[   10.054556] Data wipe complete.
+[   10.066978] I:Saving locale "pt-BR"
